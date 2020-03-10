@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-$primary-orange: #FF5851;
-// $primary-orange: rgb(0, 23, 201);
+// $primary-orange: #FF5851;
+$primary-teal:#41B3A3;
 $primary-grey: rgb(249, 249, 249);
 // $primary-blue: rgb(59, 57, 82);
 // $primary-blue: rgb(60, 55, 108);
-$primary-blue: rgb(45, 39, 97);
-// $primary-blue: rgb(45, 36, 118);
+// $primary-blue: rgb(45, 39, 97);
+$primary-blue: #1B242f;
 $font: 'Montserrat';
 
 
@@ -29,17 +29,32 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 nav {
   background: $primary-blue;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   font-family: 'Raleway';
   color: $primary-grey;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
   font-size: 16px;
   height: 60px;
+  border-bottom: 4px solid $primary-teal;
+}
+
+h2 {
+  font-family: $font;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .landing-page {
@@ -53,7 +68,7 @@ nav {
 }
 
 .top-half {
-  background: $primary-orange;
+  background: $primary-teal;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -71,7 +86,7 @@ nav {
 }
 
 .about-me {
-  height: 100vh;
+  height: 125vh;
 }
 
 .links-container {
@@ -81,6 +96,40 @@ nav {
 
 .nav-link {
   margin-left: 50px;
+}
+
+.about-me-wrapper {
+  border: 3px solid pink;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.about-me-title {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.about-me-content {
+  flex: 4;
+  display: flex;
+  border: 2px solid orange;
+}
+
+.photo-summary {
+  flex: 1;
+  border: 1px solid black;
+}
+
+.skills {
+  flex: 1;
+  border: 1px solid black;
 }
 
 #learn-more {

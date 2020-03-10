@@ -19,17 +19,32 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 nav {
-  background: #2d2761;
+  background: #1B242f;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   font-family: "Raleway";
   color: #f9f9f9;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
   font-size: 16px;
   height: 60px;
+  border-bottom: 4px solid #41B3A3;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .landing-page {
@@ -43,7 +58,7 @@ nav {
 }
 
 .top-half {
-  background: #FF5851;
+  background: #41B3A3;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -56,12 +71,12 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  color: #2d2761;
+  color: #1B242f;
   flex: 1;
 }
 
 .about-me {
-  height: 100vh;
+  height: 125vh;
 }
 
 .links-container {
@@ -73,13 +88,47 @@ nav {
   margin-left: 50px;
 }
 
+.about-me-wrapper {
+  border: 3px solid pink;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.about-me-title {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.about-me-content {
+  flex: 4;
+  display: flex;
+  border: 2px solid orange;
+}
+
+.photo-summary {
+  flex: 1;
+  border: 1px solid black;
+}
+
+.skills {
+  flex: 1;
+  border: 1px solid black;
+}
+
 #learn-more {
   margin-bottom: 110px;
   font-size: 30px;
   font-family: Arial;
   font-weight: bold;
-  color: #2d2761;
-  border: 3px solid #2d2761;
+  color: #1B242f;
+  border: 3px solid #1B242f;
   padding: 12px;
 }
 
