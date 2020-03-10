@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+$primary-orange: #FF5851;
+// $primary-orange: rgb(0, 23, 201);
+$primary-grey: rgb(249, 249, 249);
+// $primary-blue: rgb(59, 57, 82);
+// $primary-blue: rgb(60, 55, 108);
+$primary-blue: rgb(45, 39, 97);
+// $primary-blue: rgb(45, 36, 118);
+$font: 'Montserrat';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  &::before {
+    box-sizing: border-box;
+  };
+  &::after {
+    box-sizing: border-box;
+  };
+}
+
+button {
+  text-decoration: none;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+nav {
+  background: $primary-blue;
+  font-family: 'Raleway';
+  color: $primary-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 16px;
+  height: 60px;
+}
+
+.landing-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(30, 29, 40);
+  font-size: 50px;
+  font-family: $font;
+  font-weight: bold;
+}
+
+.top-half {
+  background: $primary-orange;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: $primary-grey;
+  flex: 1;
+}
+
+.bottom-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: $primary-blue;
+  flex: 1;
+}
+
+.about-me {
+  height: 100vh;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  margin-left: 50px;
+}
+
+#learn-more {
+  margin-bottom: 110px;
+  font-size: 30px;
+  font-family: Arial;
+  font-weight: bold;
+  color: $primary-blue;
+  border: 3px solid $primary-blue;
+  padding: 12px;
+}
+
